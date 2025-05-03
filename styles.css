@@ -21,6 +21,11 @@ h3 {
     color: #202124;
 }
 
+h4 {
+    margin: 0 0 8px 0;
+    color: #d93025;
+}
+
 .section {
     background: #f8f9fa;
     padding: 16px;
@@ -63,6 +68,28 @@ button {
 
 button:hover {
     background: #1557b0;
+}
+
+.danger-zone {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #dadce0;
+}
+
+.danger-button {
+    background: #d93025;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.danger-button:hover {
+    background: #a50e0e;
+}
+
+.warning-text {
+    color: #d93025;
+    font-size: 12px;
+    margin: 4px 0;
 }
 
 #statsContainer {

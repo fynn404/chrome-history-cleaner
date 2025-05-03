@@ -12,42 +12,48 @@
         <h2>History Cleaner & Stats</h2>
 
         <div class="section">
-            <h3>Clean History</h3>
+            <h3>清除历史记录</h3>
             <div class="time-range">
-                <label>Time Range:</label>
+                <label>时间范围:</label>
                 <select id="timeRange">
-                    <option value="hour">Last Hour</option>
-                    <option value="day">Last Day</option>
-                    <option value="week">Last Week</option>
-                    <option value="month">Last Month</option>
-                    <option value="custom">Custom Range</option>
+                    <option value="hour">最近一小时</option>
+                    <option value="day">最近一天</option>
+                    <option value="week">最近一周</option>
+                    <option value="month">最近一月</option>
+                    <option value="custom">自定义范围</option>
                 </select>
             </div>
 
             <div id="customRange" style="display: none;">
-                <label>From:</label>
+                <label>从:</label>
                 <input type="datetime-local" id="startTime">
-                <label>To:</label>
+                <label>至:</label>
                 <input type="datetime-local" id="endTime">
             </div>
 
             <div class="domain-filter">
-                <label>Domain Filter (optional):</label>
-                <input type="text" id="domainFilter" placeholder="e.g., google.com">
+                <label>域名过滤 (可选):</label>
+                <input type="text" id="domainFilter" placeholder="例如: google.com">
             </div>
 
-            <button id="cleanHistory">Clean History</button>
+            <button id="cleanHistory">清除选定历史</button>
+
+            <div class="danger-zone">
+                <h4>危险区域</h4>
+                <button id="cleanAllHistory" class="danger-button">清除所有历史记录</button>
+                <p class="warning-text">警告：此操作将清除所有浏览历史记录，且不可恢复！</p>
+            </div>
         </div>
 
         <div class="section">
-            <h3>Domain Statistics</h3>
+            <h3>域名统计</h3>
             <div class="stats-controls">
                 <select id="statsTimeRange">
-                    <option value="day">Last 24 Hours</option>
-                    <option value="week">Last Week</option>
-                    <option value="month">Last Month</option>
+                    <option value="day">最近24小时</option>
+                    <option value="week">最近一周</option>
+                    <option value="month">最近一月</option>
                 </select>
-                <button id="refreshStats">Refresh Stats</button>
+                <button id="refreshStats">刷新统计</button>
             </div>
             <div id="statsContainer">
                 <!-- Statistics will be inserted here -->
