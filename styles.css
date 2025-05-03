@@ -1,116 +1,189 @@
+/* 基础样式设置 */
 body {
     width: 400px;
+    /* 设置弹出窗口的固定宽度 */
     margin: 0;
+    /* 移除默认外边距 */
     padding: 16px;
+    /* 设置内边距 */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /* 使用系统默认字体 */
 }
 
+/* 主容器样式 */
 .container {
     display: flex;
+    /* 使用弹性布局 */
     flex-direction: column;
+    /* 垂直排列子元素 */
     gap: 20px;
+    /* 子元素之间的间距 */
 }
 
+/* 标题样式 */
 h2 {
     margin: 0 0 16px 0;
+    /* 设置下边距 */
     color: #1a73e8;
+    /* Google Blue 配色 */
 }
 
 h3 {
     margin: 0 0 12px 0;
+    /* 设置下边距 */
     color: #202124;
+    /* 深色文本 */
 }
 
 h4 {
     margin: 0 0 8px 0;
+    /* 设置下边距 */
     color: #d93025;
+    /* 警告色 */
 }
 
+/* 功能区块样式 */
 .section {
     background: #f8f9fa;
+    /* 浅灰色背景 */
     padding: 16px;
+    /* 内边距 */
     border-radius: 8px;
+    /* 圆角边框 */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* 轻微阴影效果 */
 }
 
+/* 表单元素组样式 */
 .time-range,
 .domain-filter,
 .stats-controls {
     margin-bottom: 12px;
+    /* 底部间距 */
 }
 
+/* 标签样式 */
 label {
     display: block;
+    /* 块级显示 */
     margin-bottom: 4px;
+    /* 底部间距 */
     color: #5f6368;
+    /* 次要文本颜色 */
 }
 
+/* 输入框和选择框样式 */
 select,
 input {
     width: 100%;
+    /* 占满容器宽度 */
     padding: 8px;
+    /* 内边距 */
     margin-bottom: 8px;
+    /* 底部间距 */
     border: 1px solid #dadce0;
+    /* 边框颜色 */
     border-radius: 4px;
+    /* 圆角边框 */
     font-size: 14px;
+    /* 字体大小 */
 }
 
+/* 按钮基础样式 */
 button {
     background: #1a73e8;
+    /* Google Blue 背景色 */
     color: white;
+    /* 白色文字 */
     border: none;
+    /* 移除边框 */
     padding: 8px 16px;
+    /* 内边距 */
     border-radius: 4px;
+    /* 圆角边框 */
     cursor: pointer;
+    /* 鼠标指针样式 */
     font-size: 14px;
+    /* 字体大小 */
     transition: background-color 0.2s;
+    /* 背景色过渡动画 */
 }
 
+/* 按钮悬停效果 */
 button:hover {
     background: #1557b0;
+    /* 深色背景 */
 }
 
+/* 危险区域样式 */
 .danger-zone {
     margin-top: 20px;
+    /* 顶部间距 */
     padding-top: 16px;
+    /* 顶部内边距 */
     border-top: 1px solid #dadce0;
+    /* 顶部分隔线 */
 }
 
+/* 危险操作按钮样式 */
 .danger-button {
     background: #d93025;
+    /* 红色警告背景 */
     width: 100%;
+    /* 占满容器宽度 */
     margin-bottom: 8px;
+    /* 底部间距 */
 }
 
+/* 危险操作按钮悬停效果 */
 .danger-button:hover {
     background: #a50e0e;
+    /* 深红色背景 */
 }
 
+/* 警告文本样式 */
 .warning-text {
     color: #d93025;
+    /* 红色警告文字 */
     font-size: 12px;
+    /* 小字体 */
     margin: 4px 0;
+    /* 上下间距 */
 }
 
+/* 统计结果容器样式 */
 #statsContainer {
     margin-top: 12px;
+    /* 顶部间距 */
 }
 
+/* 统计条目样式 */
 .stat-item {
     display: flex;
+    /* 弹性布局 */
     justify-content: space-between;
+    /* 两端对齐 */
     padding: 8px 0;
+    /* 上下内边距 */
     border-bottom: 1px solid #dadce0;
+    /* 底部分隔线 */
 }
 
+/* 最后一个统计条目移除底部分隔线 */
 .stat-item:last-child {
     border-bottom: none;
 }
 
+/* 自定义时间范围选择器样式 */
 #customRange {
     margin-top: 12px;
+    /* 顶部间距 */
     padding: 12px;
+    /* 内边距 */
     background: #fff;
+    /* 白色背景 */
     border-radius: 4px;
+    /* 圆角边框 */
     border: 1px solid #dadce0;
+    /* 边框 */
 }
